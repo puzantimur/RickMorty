@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:backgroundTint="@color/red">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/default_padding">
+
+        <TextView
+            android:id="@+id/episode_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="S01E01" />
+
+        <TextView
+            android:id="@+id/episode_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/default_space_between_words"
+            android:ellipsize="end"
+            android:ems="3"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_small_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/episode_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/episode_number"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Flight" />
+
+        <TextView
+            android:id="@+id/episode_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textColor="@color/green"
+            android:textSize="@dimen/default_small_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/episode_name"
+            tools:text="18.01.2022" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

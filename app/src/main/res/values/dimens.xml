@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_characters_width">160dp</dimen>
+    <dimen name="card_view_corner_radius">30dp</dimen>
+    <dimen name="item_character_image_size">120dp</dimen>
+    <dimen name="default_text_size">18sp</dimen>
+    <dimen name="item_characters_text_content_margin_start">4dp</dimen>
+    <dimen name="fragment_characters_app_bar_height">240dp</dimen>
+    <dimen name="fragment_characters_image_in_app_bar_height">240dp</dimen>
+    <dimen name="fragment_characters_toolbar_title_bot_margin">150dp</dimen>
+    <dimen name="default_big_text_size">24sp</dimen>
+    <dimen name="default_space_between_words">4dp</dimen>
+    <dimen name="default_small_text_size">12sp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alfa_slab_one</item>
+        <item>@font/covered_by_your_grace</item>
+        <item>@font/creepster</item>
+        <item>@font/neucha</item>
+        <item>@font/roboto_thin</item>
+    </array>
+</resources>

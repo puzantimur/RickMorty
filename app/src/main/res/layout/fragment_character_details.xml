@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_characters_app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.AppCompat">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginBottom="@dimen/fragment_characters_toolbar_title_bot_margin"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_characters_image_in_app_bar_height"
+                android:background="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_back" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/character_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/creepster"
+                android:maxLines="2"
+                android:textColor="@color/red"
+                android:textSize="@dimen/default_big_text_size"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Toxic Rick" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="@string/gender"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/character_name" />
+
+            <TextView
+                android:id="@+id/character_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_space_between_words"
+                android:fontFamily="@font/alfa_slab_one"
+                android:textColor="@color/light_red"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/gender"
+                app:layout_constraintTop_toBottomOf="@id/character_name"
+                tools:text="Male" />
+
+            <TextView
+                android:id="@+id/species"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="@string/species"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gender" />
+
+            <TextView
+                android:id="@+id/character_species"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_space_between_words"
+                android:fontFamily="@font/alfa_slab_one"
+                android:textColor="@color/red"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/species"
+                app:layout_constraintTop_toBottomOf="@id/gender"
+                tools:text="Human" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="@string/status"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/species" />
+
+            <TextView
+                android:id="@+id/character_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_space_between_words"
+                android:fontFamily="@font/alfa_slab_one"
+                android:textColor="@color/black_red"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/status"
+                app:layout_constraintTop_toBottomOf="@id/species"
+                tools:text="Dead" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="@string/location_character"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/status" />
+
+            <TextView
+                android:id="@+id/character_location"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_space_between_words"
+                android:background="@color/red"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:ems="3"
+                android:focusable="true"
+                android:fontFamily="@font/alfa_slab_one"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/location_character"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/location"
+                app:layout_constraintTop_toBottomOf="@id/status" />
+
+            <TextView
+                android:id="@+id/origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_space_between_words"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="@string/origin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/location" />
+
+            <TextView
+                android:id="@+id/character_origin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_space_between_words"
+                android:layout_marginTop="@dimen/default_space_between_words"
+                android:background="@color/light_red"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:ems="3"
+                android:focusable="true"
+                android:fontFamily="@font/alfa_slab_one"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/location_character"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/location"
+                app:layout_constraintTop_toBottomOf="@id/location" />
+
+            <TextView
+                android:id="@+id/episodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="@string/episodes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/origin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            app:indicatorColor="@color/red" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_episodes"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

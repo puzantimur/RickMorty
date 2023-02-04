@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+    <string name="characters">Characters</string>
+    <string name="location">Location</string>
+    <string name="episodes_bottom_navigation">Episodes</string>
+    <string name="name">Name:</string>
+    <string name="species">Species:</string>
+    <string name="status">Status:</string>
+    <string name="search">Search</string>
+    <string name="check_connection">You must use the app at least once with internet enabled</string>
+    <string name="retry">Retry</string>
+    <string name="no_char">No characters like that</string>
+    <string name="no_episode">No episodes like that</string>
+    <string name="reload">Reload</string>
+    <string name="apply_changes">Apply changes</string>
+    <string name="gender">Gender:</string>
+    <string name="episodes">Episodes:</string>
+    <string name="episode">Episode</string>
+    <string name="location_character">Location:</string>
+    <string name="origin">Origin:</string>
+    <string name="episodes_detail">Episode\'s detail</string>
+    <string name="location_details">Location\'s details</string>
+    <string name="filter_options">Filter options</string>
+    <string name="done">Done</string>
+    <string name="select_status">Select status</string>
+    <string name="select_species">Select species</string>
+    <string name="select_gender">Select gender</string>
+    <string name="type">Type:</string>
+    <string name="dimension">Dimension:</string>
+    <string name="episode_code">Episode code</string>
+    <string name="select_type">Select type</string>
+    <string name="select_dimension">Select dimension</string>
+    <string name="select_code">Select code</string>
+    <string-array name="status">
+        <item>Alive</item>
+        <item>Dead</item>
+        <item>Unknown</item>
+    </string-array>
+    <string-array name="species">
+        <item>Humanoid</item>
+        <item>Alien</item>
+        <item>Human</item>
+        <item>Unknown</item>
+        <item>Poopybutthole</item>
+        <item>Mythological Creature</item>
+        <item>Animal</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Genderless</item>
+        <item>Unknown</item>
+    </string-array>
+    <string-array name="dimension">
+        <item>Dimension D716-C</item>
+        <item>Dimension C-137</item>
+        <item>Post-Apocalyptic Dimension</item>
+        <item>Replacement Dimension</item>
+        <item>Cronberg Dimension</item>
+    </string-array>
+    <string-array name="type">
+        <item>Planet</item>
+        <item>Fantasy town</item>
+        <item>Space station</item>
+        <item>TV</item>
+        <item>Microverse</item>
+        <item>Cluster</item>
+        <item>Dream</item>
+        <item>Menagerie</item>
+        <item>Dwarf planet</item>
+        <item>Machine</item>
+    </string-array>
+    <string-array name="code">
+        <item>S01E01</item>
+        <item>S02E01</item>
+        <item>S03E01</item>
+        <item>S04E01</item>
+        <item>S05E01</item>
+        <item>S05E02</item>
+        <item>S01E03</item>
+        <item>S01E04</item>
+        <item>S01E05</item>
+        <item>S01E06</item>
+    </string-array>
+</resources>

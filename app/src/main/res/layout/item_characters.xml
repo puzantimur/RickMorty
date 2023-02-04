@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/card_view_corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding">
+
+        <ImageView
+            android:id="@+id/character_image"
+            android:layout_width="@dimen/item_character_image_size"
+            android:layout_height="@dimen/item_character_image_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/character_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_characters_text_content_margin_start"
+            android:gravity="center"
+            android:fontFamily="@font/covered_by_your_grace"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/character_image"
+            tools:text="Rick" />
+
+        <TextView
+            android:id="@+id/species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_thin"
+            android:text="@string/species"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/character_name" />
+
+        <TextView
+            android:id="@+id/character_species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_characters_text_content_margin_start"
+            android:fontFamily="@font/covered_by_your_grace"
+            android:textColor="@color/red"
+            android:maxLines="1"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/species"
+            app:layout_constraintTop_toBottomOf="@id/character_name"
+            tools:text="Human" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/roboto_thin"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/species" />
+
+        <TextView
+            android:id="@+id/character_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_characters_text_content_margin_start"
+            android:fontFamily="@font/covered_by_your_grace"
+            android:textColor="@color/red"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/status"
+            app:layout_constraintTop_toBottomOf="@id/character_species"
+            tools:text="Alive" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:fontFamily="@font/roboto_thin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/character_status" />
+
+        <TextView
+            android:id="@+id/character_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_characters_text_content_margin_start"
+            android:fontFamily="@font/covered_by_your_grace"
+            android:textColor="@color/red"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/gender"
+            app:layout_constraintTop_toBottomOf="@id/character_status"
+            tools:text="Male" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
