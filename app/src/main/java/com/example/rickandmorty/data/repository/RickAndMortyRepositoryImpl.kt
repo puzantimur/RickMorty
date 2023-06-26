@@ -47,7 +47,7 @@ class RickAndMortyRepositoryImpl @Inject constructor(
         species: String,
         gender: String,
         name: String,
-        page: Int
+        page: Int,
     ): Result<List<Character>> {
         return runCatching {
             api.getFilteredCharacters(status, species, gender, name, page)
